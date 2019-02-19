@@ -6,4 +6,9 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './fetch-johan.component.html'
 })
 export class FetchJohanComponent {
+
+  // METOD FÖR ATT KUNNA HÄMTA FRÅN API ????
+
+
+  
 }
