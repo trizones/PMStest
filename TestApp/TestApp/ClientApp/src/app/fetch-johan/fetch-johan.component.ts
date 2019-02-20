@@ -9,10 +9,6 @@ export class FetchJohanComponent {
 
   public getTrello() {
 
-
-
-
-
   }
   // METOD FÖR ATT KUNNA HÄMTA FRÅN API ????
 
