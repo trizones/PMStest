@@ -1,0 +1,18 @@
+
+
+<h1>API TEST JOHAN</h1>
+
+<p>8647cda40947c5f59daaa1c3f5173a1a      Johans Trello Key</p>
+
+
+<p>HÄR KOMMER JAG TESTA ATT HÄMTA EN BOARD FRÅN TRELLO VIA API</p>
+
+<button (click)="projektCounter()">HÄMTA</button>
+
+<p>ANTAL BOARDS  : <strong>{{ projektCount }}</strong></p>
+
+
+
+<li *ngFor="let info of data">   <span class="badge">{{info.name}} </span> {{info.url}}</li>
+
+
