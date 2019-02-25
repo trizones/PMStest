@@ -11,5 +11,8 @@
 
 <p>ANTAL BOARDS  : <strong>{{ projektCount }}</strong></p>
 
-<p>ANTAL BOARDS  : <strong>{{ data.name }}</strong></p>
+
+
+<li *ngFor="let info of data">   <span class="badge">{{info.name}} </span> {{info.url}}</li>
+
 

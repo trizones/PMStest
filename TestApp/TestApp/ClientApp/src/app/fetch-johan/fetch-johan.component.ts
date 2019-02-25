@@ -29,6 +29,6 @@ export class FetchJohanComponent {
 
         });
 
-    this.projektCount = antalProjekt;   //<------------ DET JAG VILL FÅ UT 
+
   }
 }
