@@ -13,6 +13,9 @@
 
 
 
-<li *ngFor="let info of data">   <span class="badge">{{info.name}} </span> {{info.url}}</li>
+<li *ngFor="let info of data">   <span class="badge"><a href="{{info.url}}">{{info.name}} </a></span></li>
+
+
+
 
 
