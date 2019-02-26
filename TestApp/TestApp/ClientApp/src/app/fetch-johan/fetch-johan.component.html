@@ -11,11 +11,6 @@
 
 <p>ANTAL BOARDS  : <strong>{{ projektCount }}</strong></p>
 
+<li *ngFor="let info of data">   <span class="badge"><a href="{{info.url}}">{{info.name}}</a></span></li>
 
-
-<li *ngFor="let info of data">   <span class="badge"><a href="{{info.url}}">{{info.name}} </a></span></li>
-
-
-
-
-
+<button (click)="createProject()">POST</button>
