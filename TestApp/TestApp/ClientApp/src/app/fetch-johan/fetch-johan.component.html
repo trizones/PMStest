@@ -1,21 +1,31 @@
 
 
-<h1>API TEST JOHAN</h1>
+<h1>API TEST</h1>
 
-<p>8647cda40947c5f59daaa1c3f5173a1a      Johans Trello Key</p>
+<button (click)="getProjects()">Get All Boards</button>
 
-
-<p>HÄR KOMMER JAG TESTA ATT HÄMTA EN BOARD FRÅN TRELLO VIA API</p>
-
-<button (click)="projektCounter()">HÄMTA</button>
+<button (click)="projectCounter()">Count Boards</button>
 
 <p>ANTAL BOARDS  : <strong>{{ projektCount }}</strong></p>
 
-<button (click)="postBoard()">Post new board</button>
 
 <li *ngFor="let info of data">   <span class="badge"><a href="{{info.url}}">{{info.name}} </a></span></li>
 
 
+<button (click)="postBoard()">Post new board</button>
+
+
+<form name="myForm" ng-controller="ExampleController">
+  <label>
+    Single BOCK:
+    <input type="text" id="text1" name="input" ng-model="example.text"
+           ng-pattern="example.word" required ng-trim="false">
+  </label>
+</form>
+<select id="choosenType1">
+  <option value="5c5ae1ef983ae064e4c5a442">Agil</option>
+  <option value="5c5ae3ef383e360f78a3642a">Non Agil</option>
+</select>
 
 
 
