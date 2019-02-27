@@ -28,7 +28,22 @@ export class FetchJohanComponent {
          
 
         });
-
-
   }
+
+  public postBoard() {
+    var data = null;
+
+    var xhr = new XMLHttpRequest();
+
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === this.DONE) {
+        console.log("Posted new board: " + this.responseText);
+      }
+    });
+
+    xhr.open("POST", "https://api.trello.com/1/boards/?name=Newboard&defaultLabels=true&defaultLists=true&keepFromSource=none&prefs_permissionLevel=private&prefs_voting=disabled&prefs_comments=members&prefs_invitations=members&prefs_selfJoin=true&prefs_cardCovers=true&prefs_background=blue&prefs_cardAging=regular&key=8647cda40947c5f59daaa1c3f5173a1a&token=5e73a3d20653d1e9f97812fa1572a61499b84ffd6954f1b33f4f93d69fd0fdff");
+
+    xhr.send(data);
+  }
+
 }
