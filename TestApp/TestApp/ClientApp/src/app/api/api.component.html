@@ -9,17 +9,16 @@
 <p>ANTAL BOARDS  : <strong>{{ projektCount }}</strong></p>
 
 
-<li *ngFor="let info of data">   <span class="badge"><a href="{{info.url}}">{{info.name}} </a></span></li>
+<li *ngFor="let info of data"> <span> <a href="{{info.url}}">{{info.name}} </a> </span> </li>
 
 
 <button (click)="postBoard()">Post new board</button>
 
 
-<form name="myForm" ng-controller="ExampleController">
+<form>
   <label>
-    Single BOCK:
-    <input type="text" id="text1" name="input" ng-model="example.text"
-           ng-pattern="example.word" required ng-trim="false">
+    Välj namn:
+    <input type="text" id="text1" name="input">
   </label>
 </form>
 <select id="choosenType1">
